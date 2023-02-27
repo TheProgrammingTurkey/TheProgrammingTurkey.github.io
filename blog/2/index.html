@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/7d1a1b38-8d2d-4542-b5ac-650c6eb984d3/download__3_-removebg-preview.png?v=1651854807095"
+    />
+    <title>Unblocked Games</title>
+    <link rel="stylesheet" href="/blog/style.css" />
+    <script src="/blog/script.js" defer></script>
+    <script
+      src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
+      async=""
+    ></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function () {
+        OneSignal.init({
+          appId: "dbdb36aa-9541-47c0-b6a0-80f478b4ee26",
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td><button class="previous" onclick="previous()">Previous</button></td>
+        <td>
+          <img
+            class="homeButton"
+            onclick="location.href='/blogs.html'"
+            src="https://cdn.glitch.global/7d1a1b38-8d2d-4542-b5ac-650c6eb984d3/download__3_-removebg-preview.png?v=1651854807095"
+          />
+        </td>
+        <td><button class="next" onclick="next()">Next</button></td>
+      </tr>
+    </table>
+    <h1>Creating Your Own Unblocked Games Website</h1>
+    
+    <p>
+      You like games right?
+    </p>
+
+    <p class="date">4/30/2022</p>
+
+    <p>
+      If you haven't been living under a rock for the past 5-10 years, you've
+      seen one of these unblocked games websites:
+    </p>
+
+    <img
+      src="https://cdn.glitch.global/7d1a1b38-8d2d-4542-b5ac-650c6eb984d3/Screenshot%202022-04-30%203.01.33%20PM.png?v=1651345324046"
+    />
+
+    <p>
+      While they may look complex to the average non-coder, they are actually
+      just google sites. The thing is though, those websites can't be created
+      anymore.
+    </p>
+
+    <p>
+      In 2016, Google presented the new google sites. Ever since, users have
+      slowly shifted to the newer, nicer, neater version. In May 2021, the
+      creation of classic sites were disabled, and in December 2021, editing
+      classic sites was disabled. All of this, combined with the end of flash in
+      2021, means that classic google sites are slowly going out of date.
+    </p>
+
+    <p>
+      Now, what does that have to do with most unblocked games websites? As I
+      mentioned before, all the game websites that you have played were made
+      using classic google sites. So, as games get blocked, stop working, or
+      change URLs, these websites can't keep adding, removing, changing, and
+      fixing their website.
+    </p>
+
+    <p>
+      You might wonder, "Why can't you just use the new google sites?" Although
+      it may be good for making informational websites, there are not enough
+      tabs or pages in the navbar to fit the 100+ games needed for a game
+      website.
+    </p>
+
+    <p>
+      Now to get to the point of this whole blog post. In Christmas-ish time
+      last year, I had this exact problem but on the consumer end, there were no
+      games for me to play. And so over the course of half a year I, with help
+      from some of my friends coded an unblocked games website. It looks exactly
+      like the classic ones but is still able to be edited, and added on to, to
+      keep up with the latest games. Here is a little picture of it:
+    </p>
+
+    <img
+      src="https://cdn.glitch.global/7d1a1b38-8d2d-4542-b5ac-650c6eb984d3/Screenshot%202022-04-30%204.33.44%20PM.png?v=1651350839511"
+    />
+
+    <p>
+      If you are planning to make a website using this template, there is
+      something I need to address. It takes a lot of work/time. Luckily with the
+      help of some friends. (mainly
+      <a href="https://dublinschools.xyz">Derin</a>) We've been able to cut down
+      the time spent adding games. When you add a game, you will make a new
+      file, change the name, yadda yadda yadda. After you do all that input this
+      code into your code editors terminal (replace the text where it says):
+    </p>
+
+    <pre><code>
+find . -type f -exec sed -i 's/&lt;li class="games"&gt;&lt;a href=\"fileRightAfter.html/&lt;li class="games"&gt;&lt;a href=\"fileName.html\"&gt;Game Name&lt;\/a&gt;&lt;\/li&gt;\n          &/g' {} +
+    </code></pre>
+
+    <p>
+      This piece of code basically finds the game that you tell it to in the
+      navbar and pastes a new game in the navbar right above it on every file,
+      saving you so much time.
+    </p>
+
+    <p>Here is the HTML to the website:</p>
+
+    <pre><code>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot;content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot;content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+    &lt;link rel=&quot;icon&quot;href=&quot;https://cdn.glitch.global/7291e345-21ef-440f-a17b-8a85764c9ade/Screenshot_2022-01-10_161756_ccexpress.png?v=1641849861252&quot;/&gt;<br>
+    &lt;title&gt;Website Name | Current Page&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script src=&quot;script.js&quot;defer&gt;&lt;/script&gt;
+    &lt;div&gt;
+      &lt;div style=&quot;float:left; width: 20%;&quot;&gt; 
+        &lt;img src=&quot;Logo Or Icon&quot; style=&quot;width: 100%; height: auto;&quot;&gt; 
+      &lt;/div&gt; 
+      &lt;div style=&quot;float:left; width: 80%;&quot;&gt;
+        &lt;h1&gt;Website Name&lt;/h1&gt; 
+      &lt;/div&gt; 
+    &lt;/div&gt; 
+    &lt;ul class=&quot;top&quot;&gt;
+      &lt;li&gt;&lt;a class=&quot;topLink&quot;href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br> 
+      &lt;li&gt;&lt;a class=&quot;topLink&quot;href=&quot;tabFile.html&quot;&gt;Tab File Name&lt;/a&gt;&lt;/li&gt; 
+    &lt;/ul&gt; 
+    &lt;hr&gt;
+    &lt;div class=&quot;row&quot;&gt; 
+      &lt;div class=&quot;column left&quot;&gt;
+        &lt;input id=&quot;searchbar&quot; onkeyup=&quot;search_games()&quot;type=&quot;text&quot; name=&quot;search&quot; placeholder=&quot;Search Games...&quot;&gt; 
+        &lt;ul&gt;
+          &lt;li class=&quot;games&quot;&gt;&lt;a href=&quot;gameFile.html&quot;&gt;Game Name&lt;/a&gt;&lt;/li&gt; 
+          &lt;li class=&quot;games&quot;&gt;&lt;a href=&quot;gameFile.html&quot;&gt;Game Name&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt; 
+      &lt;/div&gt; 
+      &lt;div class=&quot;column right&quot;&gt;
+        &lt;div&gt; 
+          &lt;div style=&quot;float:left; width: 85%;&quot;&gt; 
+            &lt;p id=&quot;gameName&quot;&gt;Current Game Playing Name&lt;/p&gt;
+          &lt;/div&gt; 
+          &lt;div style=&quot;float:left; width: 15%;&quot;&gt; 
+            &lt;img id=&quot;fullScreenButton&quot;src=&quot;fullScreenIcon&quot;onclick=&quot;openFullscreen();&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;iframe id=&quot;iframe&quot; src=&quot;https://gameSource&quot;&gt;&lt;/iframe&gt; 
+        &lt;h5&gt;Highscores:&lt;/h5&gt;
+        &lt;br&gt; 
+        &lt;p&gt;1. Name - Score&lt;/p&gt; 
+        &lt;p&gt;2. Name - Score&lt;/p&gt; 
+      &lt;/div&gt; 
+    &lt;/div&gt; 
+  &lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+
+    <p>Here is the Javascript:</p>
+
+    <pre><code>
+if (!location.protocol[5]) {
+  location.protocol = "https:"
+}
+
+document.querySelector('img').onclick=function(){
+  location.href='/'
+}
+
+var game = document.getElementById("iframe");
+function openFullscreen() {
+  if (game.requestFullscreen) {
+    game.requestFullscreen();
+  } else if (game.webkitRequestFullscreen) {
+    /* Safari */
+    game.webkitRequestFullscreen();
+  } else if (game.msRequestFullscreen) {
+    /* IE11 */
+    game.msRequestFullscreen();
+  }
+}
+
+function search_games() {
+  let input = document.getElementById("searchbar").value;
+  input = input.toLowerCase();
+  let x = document.getElementsByClassName("games");
+
+  for (var i = 0; i &lt; x.length; i++) {
+    if (!x[i].textContent.toLowerCase().includes(input)) {
+      x[i].style.display = "none";
+    } else {
+      x[i].style.display = "list-item";
+    }
+  }
+}
+    </code></pre>
+
+    <p>And here is the CSS:</p>
+
+    <pre><code>
+hr { 
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-color: #c8dbed;
+  border-top: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+li a {
+  display: block;
+  color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+li a.active {
+  background-color: #92b6db;
+  color: white;
+}
+
+li a:hover {
+
+  transition-duration: .4s;
+  background-color: #92b6db;
+  color:white;
+  transform: scale(1.04);
+}
+
+h1 {
+  text-align: center;
+  font-size: 6.5vw;
+  color: #b4c9e4;
+  font-weight: bold;
+  font-family: sans-serif;
+
+}
+
+body {
+  background-color: #343a40;
+  font-family: "Acme", sans-serif;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 17%;
+}
+
+.right {
+  width: 83%;
+  margin: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+iframe {
+  width: 100%;
+  height: 98vh;
+  position: relative;
+  border: 0px;
+  border-radius: 20px;
+}
+.top {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  width: 90%;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+.topLink {
+  float: left;
+  background-color: #c8dbed;
+  font-size: 15px;
+}
+
+
+li a:hover:not(.active) {
+  background-color: #92b6db;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+p {
+  font-size: 2vw;
+  margin: auto;
+  margin-top: 0px;
+  color: #c8dbed;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+img {
+  height: 300px;
+  border-radius: 20px;
+  border-width: 0px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#searchbar {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+  border-width: 0px;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+
+#gameName {
+  font-size: 5vw;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#fullScreenButton {
+  margin-top: 0px;
+  width: 66%;
+  height: auto;
+}
+
+#gameMaker {
+  margin-bottom: 20px;
+}
+
+h5 {
+  margin-top: 10px;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #b4c9e4;
+  margin-bottom: 0px;
+}
+    </code></pre>
+
+    <p>
+      If you're looking to check out the website model, or just looking to play
+      some games, here is the website link:
+      <a href="https://turkey2098.github.io/unblockedgames66/">Unblocked Games 66</a>
+    </p>
+  </body>
+</html>
