@@ -7,9 +7,9 @@
       rel="icon"
       href="https://cdn.glitch.global/7d1a1b38-8d2d-4542-b5ac-650c6eb984d3/download__3_-removebg-preview.png?v=1651854807095"
     />
-    <title>Turkey2098 | Ping</title>
-    <link rel="stylesheet" href="/projects/style.css" />
-    <script src="/projects/script.js" defer></script>
+    <title>Turkey2098</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <script
       src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
       async=""
@@ -27,41 +27,87 @@
     <div class="topnav">
       <img
         src="https://cdn.glitch.global/7d1a1b38-8d2d-4542-b5ac-650c6eb984d3/download__3_-removebg-preview.png?v=1651854807095"
-        onclick="window.location.href=('/index.html')"
+        onclick="window.location.href=('index.html')"
         class="homeImg"
       />
-      <a href="/index.html">Home</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/blogs.html">Blogs</a>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="blogs.html">Blogs</a>
       <div class="dropdown">
-        <button class="dropbtn">
-          Social
-        </button>
+        <button class="dropbtn">Social</button>
         <div class="dropdown-content">
           <a href="https://github.com/Turkey2098">Github</a>
           <a href="https://glitch.com/@Turkey2098">Glitch</a>
         </div>
       </div>
     </div>
-    <h1>Ping</h1>
 
-    <h2>Top Down Ping Pong Game</h2>
+    <div class="home-container">
+      <h1>Hi,</h1>
 
-    <p class="date">6/16/23</p>
+      <p>
+        I am Turkey2098. I code as a hobby, to learn, and hopefully do this for
+        a job later in life. I specialize in Web Development using HTML, CSS,
+        and JS, although I am trying to improve my Javascript. Here you will see
+        my blogs, projects, and me just trying to get better at coding.
+      </p>
 
-    <p>
-      Ping was my take on the classic "Pong" game made by Atari. Because it was my first JS canvas project, 
-      it took a lot of learning and getting used to. This caused it to take a longer time to make than I thought, 
-      taking just about five months during the second semester of my freshman year of highschool. I modified 
-      the original game by adding powerups and making the paddles close in towards each other. With three different 
-      gamemodes and three difficulties, Ping is worth a try. Click the link below to check it out.
-    </p>
-    <p class="links">
-      <a href="https://turkey2098.github.io/ping/">Check It Out</a
-      >&nbsp;&nbsp;|&nbsp;&nbsp;<a
-        href="https://github.com/Turkey2098/ping"
-        >Source Code</a
-      >
-    </p>
+      <hr />
+
+      <br />
+
+      <h1 class="collapsible">My Projects</h1>
+      <div class="content">
+        <p>
+          I wouldn't be a coder without some projects. So far in my few years of
+          coding I have made an unblocked games website, a goalie stats machine,
+          and many more smaller projects. Feel free to check them out.
+        </p>
+
+        <button
+          onclick="window.location.replace('projects.html')"
+          class="homeLink"
+        >
+          My Projects
+        </button>
+      </div>
+
+      <hr />
+
+      <br />
+
+      <h1 class="collapsible">My Blogs</h1>
+      <div class="content">
+        <p>
+          My blogs are where I express my feelings, give tips, and share my
+          projects in a creative way. They're normally a 2-3 minute read with
+          the occasional memes, and snippets of code. Give them a try.
+        </p>
+
+        <button
+          onclick="window.location.replace('blogs.html')"
+          class="homeLink"
+        >
+          My Blogs
+        </button>
+      </div>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
