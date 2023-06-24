@@ -242,6 +242,7 @@ p { /*good*/
 
   #fullScreenLogo{
     width: 600px;
+    height: auto;
   }
 }
 
@@ -257,5 +258,6 @@ p { /*good*/
 
   #fullScreenLogo{
     width: 300px;
+    height: auto;
   }
 }
