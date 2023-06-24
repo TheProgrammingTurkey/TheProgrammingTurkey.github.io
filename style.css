@@ -241,7 +241,7 @@ p { /*good*/
   }
 
   #fullScreenLogo{
-    width: 80%;
+    width: 600px;
   }
 }
 
@@ -253,5 +253,9 @@ p { /*good*/
   }
   p{
     font-size: 20px
+  }
+
+  #fullScreenLogo{
+    width: 300px;
   }
 }
