@@ -87,7 +87,7 @@ p { /*good*/
 }
 
 .fullScreenHeader{
-  height: 90vh
+  height: 90vh;
 }
 
 .container { /*good*/
@@ -239,7 +239,10 @@ p { /*good*/
     padding-right: 8px;
     padding-top: 3px;
   }
-  
+
+  #fullScreenLogo{
+    width: 70vw;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -250,5 +253,9 @@ p { /*good*/
   }
   p{
     font-size: 20px
+  }
+
+  #fullScreenLogo{
+    height: 60vh;
   }
 }
