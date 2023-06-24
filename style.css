@@ -254,8 +254,4 @@ p { /*good*/
   p{
     font-size: 20px
   }
-
-  #fullScreenLogo{
-    height: 60vh;
-  }
 }
