@@ -3,33 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      href="https://cdn.glitch.global/7d1a1b38-8d2d-4542-b5ac-650c6eb984d3/download__3_-removebg-preview.png?v=1651854807095"
-    />
+    <link rel="icon" href="turkeyLogo.png"/>
     <title>Turkey2098</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <script
-      src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
-      async=""
-    ></script>
-    <script>
-      window.OneSignal = window.OneSignal || [];
-      OneSignal.push(function () {
-        OneSignal.init({
-          appId: "dbdb36aa-9541-47c0-b6a0-80f478b4ee26",
-        });
-      });
-    </script>
   </head>
   <body>
     <div class="topnav">
-      <img
-        src="https://cdn.glitch.global/7d1a1b38-8d2d-4542-b5ac-650c6eb984d3/download__3_-removebg-preview.png?v=1651854807095"
-        onclick="window.location.href=('index.html')"
-        class="homeImg"
-      />
+      <img src="fullScreenLogo.png" onclick="window.location.href=('index.html')" class="homeImg"/>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="blogs.html">Blogs</a>
@@ -37,77 +18,61 @@
         <button class="dropbtn">Social</button>
         <div class="dropdown-content">
           <a href="https://github.com/Turkey2098">Github</a>
-          <a href="https://glitch.com/@Turkey2098">Glitch</a>
+          <a>More Coming Soon</a>
         </div>
       </div>
     </div>
 
-    <div class="home-container">
-      <h1>Hi,</h1>
+    <div class="fullScreenHeader">
+      <img src="fullScreenLogo.png" id="fullScreenLogo">
+      <hr>
+      <p>A Highschool Student That Loves To Code</p>
+    </div>
 
-      <p>
-        I am Turkey2098. I code as a hobby, to learn, and hopefully do this for
-        a job later in life. I specialize in Web Development using HTML, CSS,
-        and JS, although I am trying to improve my Javascript. Here you will see
-        my blogs, projects, and me just trying to get better at coding.
-      </p>
+    <div class="information">
+      <div class="projects">
+        <h1>My Projects</h1>
+        <div class="content">
+          <p>
+            I wouldn't be a coder without some projects. So far in my few years of
+            coding I have made an unblocked games website, a goalie stats machine,
+            and many more smaller projects. Feel free to check them out.
+          </p>
 
-      <hr />
-
-      <br />
-
-      <h1 class="collapsible">My Projects</h1>
-      <div class="content">
-        <p>
-          I wouldn't be a coder without some projects. So far in my few years of
-          coding I have made an unblocked games website, a goalie stats machine,
-          and many more smaller projects. Feel free to check them out.
-        </p>
-
-        <button
-          onclick="window.location.replace('projects.html')"
-          class="homeLink"
-        >
-          My Projects
-        </button>
+          <button onclick="window.location.replace('projects.html')" class="homeLink">
+            My Projects
+          </button>
+        </div>
       </div>
 
-      <hr />
+      <br>
 
-      <br />
+      <div class="blogs">
+        <h1>My Blogs</h1>
+        <div class="content">
+          <p>
+            My blogs are where I express my feelings, give tips, and share my
+            projects in a creative way. They're normally a 2-3 minute read with
+            the occasional memes, and snippets of code. Give them a try.
+          </p>
 
-      <h1 class="collapsible">My Blogs</h1>
-      <div class="content">
-        <p>
-          My blogs are where I express my feelings, give tips, and share my
-          projects in a creative way. They're normally a 2-3 minute read with
-          the occasional memes, and snippets of code. Give them a try.
-        </p>
-
-        <button
-          onclick="window.location.replace('blogs.html')"
-          class="homeLink"
-        >
-          My Blogs
-        </button>
+          <button onclick="window.location.replace('blogs.html')" class="homeLink">
+            My Blogs
+          </button>
+        </div>
       </div>
     </div>
 
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
+    <br><br>
 
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          }
-        });
-      }
-    </script>
+    <h1>Most Recent Project:</h1>
+    <div id="recentProj">
+      <a href="projects/Ping" class="link">
+        <div bg="{bg}" class="page-wrapper">
+          <div class="link-background" style="background-image: url(PING.png); background-size: auto 220%;"></div>
+          <div class="link-title">Ping</div>
+        </div>
+      </a>
+    </div>
   </body>
 </html>

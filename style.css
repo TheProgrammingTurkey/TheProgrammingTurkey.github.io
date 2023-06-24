@@ -6,26 +6,33 @@
   src: url("https://cdn.glitch.global/e23c6d22-e86e-4765-a3d2-14f786559329/Euclid%20Circular%20A%20Medium.ttf?v=1651332812845");
 }
 
-body {
+* {
+  text-align: center;
+}
+
+body {  /*good*/
   background-color: #343a40;
   margin: 0px;
   margin-bottom: 100px;
 }
 
-.homeImg {
-  width: 60px;
-  padding-left: 5px;
-  padding-right: 15px;
-  padding-top: 5px;
+.homeImg { /*good*/
+  width: 100px;
   cursor: pointer;
-}
-.topnav {
-  background-color: #333333;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 
-.topnav a {
-  display: inline-block;
-  overflow: hidden;
+.topnav {  /*good*/
+  display: flex;
+  align-items: center;  
+  background-color: #333333;
+  width: 100%;
+  height: 10vh;
+  color: #cfdcee;
+}
+
+.topnav a {  /*good*/
   color: #cfdcee;
   padding: 10px 12px;
   font-size: 25px;
@@ -34,37 +41,30 @@ body {
   text-decoration: none;
 }
 
-.topnav a:hover {
+.topnav a:hover { /*good*/
   opacity: 0.6;
   transition: 0.4s;
 }
 
-hr {
+hr { /*good*/
   width: 50%;
-  margin-inline: auto;
-  margin-top:15px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 
-h1 {
-  text-align: center;
+h1 { /*good*/
   color: #5e8bc5;
   font-family: "Ubuntu", sans-serif;
   font-size: 50px;
   margin-top: 15px;
 }
 
-p {
-  text-align: center;
+p { /*good*/
   color: #b4c9e4;
   font-family: "rubik", sans-serif;
-  width: 70%;
-  margin: auto;
   font-size: 30px;
 }
 
-.homeLink {
-  text-align: center;
+.homeLink { /*good*/
   margin-top: 20px;
   margin-bottom: 10px;
   border: 3px solid #4275b7;
@@ -77,20 +77,23 @@ p {
   font-family: "lucid";
 }
 
-.homeLink:hover {
+.homeLink:hover { /*good*/
   transition-duration: 0.4s;
   transform: scale(1.08);
 }
 
-.home-container {
-  text-align: center;
+#fullScreenLogo{
+  height: 60vh;
 }
 
-.container {
+.fullScreenHeader{
+  height: 90vh
+}
+
+.container { /*good*/
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
   color: #333333;
+  margin: auto;
 }
 
 .posts {
@@ -136,7 +139,6 @@ p {
   opacity: 0;
   font-size: 16px;
   font-family: Roboto, sans-serif;
-  text-align: center;
 }
 .link-title:hover {
   opacity: 1;
@@ -200,35 +202,23 @@ p {
   display: block;
 }
 
-.collapsible {
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0px;
-  border: none;
-  text-align: center;
-  outline: none;
-  color: #5e8bc5;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 50px;
-  margin-inline: auto;
+.information{
+  display: flex;
 }
 
-.collapsible:after {
-  content: "\002B";
-  color: #5e8bc5;
-  font-weight: bold;
-  margin-left: 20px;
-}
-
-.active:after {
-  content: "\2212";
+#recentProj{
+  width: 25%;
+  margin: auto;
 }
 
 .content {
-  padding: 0px;
-  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  display: grid;
+  place-items: center;
+}
+
+.content p{
+  width: 70%;
 }
 
 @media only screen and (max-width: 800px) {
@@ -260,8 +250,5 @@ p {
   }
   p{
     font-size: 20px
-  }
-  .collapsible{
-    font-size: 30px;
   }
 }

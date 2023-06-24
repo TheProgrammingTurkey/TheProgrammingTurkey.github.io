@@ -104,6 +104,7 @@ body {
     width: 160px;
     margin: auto;
     cursor: pointer;
+    border-radius: 0px;
   }
   
   .next{
