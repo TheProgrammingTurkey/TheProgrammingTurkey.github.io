@@ -206,6 +206,10 @@ p {
   display: flex;
 }
 
+.projects, .blogs{
+  width: 50vw
+}
+
 #recentProj{
   width: 25%;
   margin: auto;
