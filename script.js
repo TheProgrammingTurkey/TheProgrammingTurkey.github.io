@@ -1,11 +1,6 @@
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+let navbar = document.getElementById('topnav');
+let timelines = document.getElementById('timelines');
+let centerLine = document.getElementsByClassName('centerLine')[0];
 
 
-
+timelines.style.height = window.innerHeight-navbar.offsetHeight + 'px';

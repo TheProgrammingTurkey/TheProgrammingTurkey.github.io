@@ -22,7 +22,7 @@ a{
   text-decoration: none;
 }
 
-.topnav {  /*good*/
+#topnav {  /*good*/
   display: flex;
   align-items: center;  
   background-color: #333333;
@@ -31,7 +31,7 @@ a{
   color: #cfdcee;
 }
 
-.topnav a {  /*good*/
+#topnav a {  /*good*/
   color: #cfdcee;
   padding: 10px 12px;
   font-size: 25px;
@@ -40,7 +40,7 @@ a{
   text-decoration: none;
 }
 
-.topnav a:hover { /*good*/
+#topnav a:hover { /*good*/
   opacity: 0.6;
   transition: 0.4s;
 }
@@ -81,12 +81,12 @@ p{
   opacity: .7;
   color: #c8dbed;
 }
-.dropdown {
+#dropdown {
   overflow: hidden;
   display: inline-block;
 }
 
-.dropdown .dropbtn {
+#dropdown #dropbtn {
   border: none;
   outline: none;
   background-color: inherit;
@@ -101,7 +101,7 @@ p{
   text-decoration: none;
 }
 
-.dropdown-content {
+#dropdown-content {
   display: none;
   position: absolute;
   background-color: #2c2c2c;
@@ -109,7 +109,7 @@ p{
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 
-.dropdown-content a {
+#dropdown-content a {
   float: none;
   color: #cfdcee;
   padding: 8px 16px;
@@ -119,20 +119,20 @@ p{
   font-size: 18px;
 }
 
-.dropbtn:hover,
-.dropdown-content a:hover {
+#dropbtn:hover,
+#dropdown-content a:hover {
   opacity: 0.6;
   transition: 0.4s;
 }
 
-.dropdown:hover .dropdown-content {
+#dropdown:hover #dropdown-content {
   display: block;
 }
 
 
 @media only screen and (max-width: 800px) {
   
-  .topnav a, .dropdown .dropbtn {
+  #topnav a, #dropdown #dropbtn {
     padding: 10px 7px;
     font-size: 20px;
   }
