@@ -23,6 +23,6 @@ Array.from(bottoms).forEach(entry => {
 key.style.top = (navbar.offsetHeight + 20) + 'px';
 
 timeline.addEventListener('wheel', (event) => {
-    event.preventDefault(); // Prevent vertical scrolling
-    timeline.scrollLeft += event.deltaY*2; // Scroll horizontally based on the vertical wheel movement
+    event.preventDefault();
+    timeline.scrollLeft += event.deltaY*2;
 });

@@ -22,7 +22,7 @@ a{
   text-decoration: none;
 }
 
-#topnav {  /*good*/
+#topnav {
   display: flex;
   align-items: center;  
   background-color: #333333;
@@ -31,7 +31,7 @@ a{
   color: #cfdcee;
 }
 
-#topnav a {  /*good*/
+#topnav a {
   color: #cfdcee;
   padding: 10px 12px;
   font-size: 25px;
@@ -40,7 +40,7 @@ a{
   text-decoration: none;
 }
 
-#topnav a:hover { /*good*/
+#topnav a:hover {
   opacity: 0.6;
   transition: 0.4s;
 }

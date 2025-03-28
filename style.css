@@ -234,6 +234,7 @@ p {
   background-color: #A5B4C7;
   border: 2px solid #4275B7;
   border-radius: 10px;
+  z-index: 1;
 }
 
 #keyTitle{
@@ -279,7 +280,7 @@ p {
   border: 0px solid #b4c9e4;
   border-top-width: 1px;
   border-bottom-width: 1px;
-  width: 200%;
+  width: 2500px;
   position: absolute;
   z-index: -1;
 }
@@ -291,15 +292,59 @@ p {
   width: auto;
 }
 
+.date{
+  width: 100px;
+  text-align: middle;
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  top:10%;
+}
+
 .text{
   border: 2px solid white;
   border-radius: 4px;
   position: absolute;
-  background-color: #343a40;
-  cursor: pointer;
   padding: 10px;
-  color: white;
+}
+
+.text:hover > .info {
+  opacity: 1;
+  height: auto;
+}
+
+.codingProj{
+  background-color: #1C314C;
+  cursor: pointer;
+}
+
+.buildingProj{
+  background-color: #2C4E7A;
+  cursor: pointer;
+}
+
+.learn{
+  background-color: #4275B7;
+}
+
+.fun{
+  background-color: #6993C9;
+}
+
+.header{
   font-size: 20px;
+  color: white;
+}
+
+.info{
+  font-size: 10px;
+  color: white;
+  transition: opacity .4s;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .line{
