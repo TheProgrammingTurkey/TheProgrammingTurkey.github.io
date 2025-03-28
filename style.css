@@ -228,7 +228,7 @@ p {
 #key{
   display: block;
   position: fixed;
-  right: 20px;
+  right: 15px;
   color: white;
   font-family: "Ubuntu Condensed", sans-serif;
   background-color: #A5B4C7;
@@ -355,6 +355,25 @@ p {
   z-index: -1;
 }
 
+@media only screen and (max-width: 1400px) {
+  .header{
+    font-size: 15px;
+  }
+
+  .text{
+    padding: 7px;
+    border-width: 1px;
+  }
+
+  .date{
+    top: 5%;
+  }
+
+  #key{
+    border: 2px solid #4275B7;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .posts {
     grid-gap: 14px;
@@ -377,6 +396,41 @@ p {
   #fullScreenLogo{
     width: 600px;
     height: auto;
+  }
+
+  .header{
+    font-size: 12px;
+  }
+
+  .text{
+    padding: 5px;
+  }
+
+  #keyTitle{
+    font-size: 15px;
+    margin: 8px;
+  }
+  
+  .color{
+    margin-left: 5px;
+    margin-bottom: 4px;
+  }
+  
+  .keyColor{
+    min-width: 12px;
+    min-height: 12px;
+    border: 1px solid white;
+    margin-left: 3px;
+  }
+  
+  .keyText{
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+
+  .date{
+    font-size: 20px;
   }
 }
 
