@@ -51,6 +51,7 @@ hr {
 }
 
 h1 { 
+  font-family: "Ubuntu", sans-serif;
   color: #5e8bc5;
   vertical-align: middle;
   font-size: 50px;
