@@ -254,7 +254,7 @@ p {
   background-color: #A5B4C7;
   border: 2px solid #4275B7;
   border-radius: 10px;
-  z-index: 1;
+  z-index: 4;
 }
 
 #keyTitle{
@@ -341,8 +341,11 @@ p {
 }
 
 .text:hover > .info {
-  opacity: 1;
-  height: auto;
+  display: block;
+}
+
+.text:hover{
+  z-index: 3;
 }
 
 .codingProj{
@@ -373,12 +376,12 @@ p {
 }
 
 .info{
-  font-size: 10px;
+  margin-top: 3px;
+  font-size: 12px;
   color: white;
   transition: opacity .4s;
-  opacity: 0;
-  height: 0;
   overflow: hidden;
+  display: none;
 }
 
 .line{
@@ -438,6 +441,10 @@ p {
 
   .text{
     padding: 5px;
+  }
+
+  .info{
+    font-size: 8px;
   }
 
   #keyTitle{
