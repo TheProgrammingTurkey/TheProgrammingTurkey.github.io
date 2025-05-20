@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body onload="homePage()">
     <div id="topnav">
       <img src="assets/fullScreenLogo.png" onclick="window.location.href=('index.html')" class="homeImg"/>
       <a href="index.html">Home</a>
@@ -79,6 +79,20 @@
           </div>
         </div>
       </a>
+    </div>
+    <h1>My Skills:</h1>
+    <div id="expertise">
+      <h3 onclick="expertiseScrollLeft()" style="font-size: 40px; cursor: pointer;">&#x25C0; &thinsp;</h3>
+      <div id="leftArea">
+        <img id="leftIMG">
+      </div>
+      <div id="centerArea">
+        <img id="centerIMG">
+      </div>
+      <div id="rightArea">
+        <img id="rightIMG">
+      </div>
+      <h3 onclick="expertiseScrollRight()" style="font-size: 40px; cursor: pointer;">&thinsp; &#x25B6;</h3>
     </div>
   </body>
 </html>

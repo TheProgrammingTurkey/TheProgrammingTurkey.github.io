@@ -1,27 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
-
 body {
   background-color: #343a40;
   margin: 0px;
 }
-
 .homeImg {
   width: 100px;
   cursor: pointer;
   padding-left: 10px;
   padding-right: 20px;
 }
-
 .links{
   font-size: 15px;
 }
-
 a{
   color: #4CB3E6;
   text-decoration: none;
 }
-
 #topnav {
   display: flex;
   align-items: center;  
@@ -30,7 +25,6 @@ a{
   height: 10vh;
   color: #cfdcee;
 }
-
 #topnav a {
   color: #cfdcee;
   padding: 10px 12px;
@@ -39,12 +33,10 @@ a{
   font-family: "Ubuntu Condensed", sans-serif;
   text-decoration: none;
 }
-
 #topnav a:hover {
   opacity: 0.6;
   transition: 0.4s;
 }
-
 h1 {
   text-align: center;
   color: #5e8bc5;
@@ -54,7 +46,6 @@ h1 {
   margin: auto;
   margin-top: 30px;
 }
-
 h2{
   text-align: center;
   color: #BFD1E8;
@@ -85,7 +76,6 @@ p{
   overflow: hidden;
   display: inline-block;
 }
-
 #dropdown #dropbtn {
   border: none;
   outline: none;
@@ -100,7 +90,6 @@ p{
   font-family: "Ubuntu Condensed", sans-serif;
   text-decoration: none;
 }
-
 #dropdown-content {
   display: none;
   position: absolute;
@@ -108,7 +97,6 @@ p{
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
-
 #dropdown-content a {
   float: none;
   color: #cfdcee;
@@ -118,18 +106,14 @@ p{
   text-align: left;
   font-size: 18px;
 }
-
 #dropbtn:hover,
 #dropdown-content a:hover {
   opacity: 0.6;
   transition: 0.4s;
 }
-
 #dropdown:hover #dropdown-content {
   display: block;
 }
-
-
 @media only screen and (max-width: 800px) {
   
   #topnav a, #dropdown #dropbtn {
