@@ -32,29 +32,34 @@ function historyPage(){
 
 //expertise section
 let icons = ['assets/js.png', 'assets/html.png', 'assets/css.png', 'assets/java.png', 'assets/python.png', 'assets/sheets.png', 'assets/freecad.png'];
+let iconExplanations = ['htmlExp', 'cssExp', 'javaExp', 'pythonExp', 'sheetsExp', 'freecadExp', 'jsExp'];
 function homePage() {
-    let leftIcon = icons[0];
-    let centerIcon = icons[1];
-    let rightIcon = icons[2];
-    document.getElementById('leftIMG').src = leftIcon;
-    document.getElementById('centerIMG').src = centerIcon;
-    document.getElementById('rightIMG').src = rightIcon;
+    document.getElementById('leftIMG').src = icons[0];
+    document.getElementById('centerIMG').src = icons[1];
+    document.getElementById('rightIMG').src = icons[2];
+    document.getElementById('actualExp').innerHTML = document.getElementById(iconExplanations[0]).innerHTML;
 }
 
 function expertiseScrollLeft() {
-    let pos1 = icons[icons.length-1];
+    let finalIcon = icons[icons.length-1];
+    let finalExplanation = iconExplanations[iconExplanations.length-1];
     for(let i = icons.length-1; i > 0; i--){
         icons[i] = icons[i-1];
+        iconExplanations[i] = iconExplanations[i-1];
     }
-    icons[0] = pos1;
+    icons[0] = finalIcon;
+    iconExplanations[0] = finalExplanation;
     homePage();
 }
 
 function expertiseScrollRight() {
-    let pos1 = icons[0];
+    let firstIcon = icons[0];
+    let firstExplanation = iconExplanations[0];
     for(let i = 0; i < icons.length-1; i++){
         icons[i] = icons[i+1];
+        iconExplanations[i] = iconExplanations[i+1];
     }
-    icons[icons.length-1] = pos1;
+    icons[icons.length-1] = firstIcon;
+    iconExplanations[iconExplanations.length-1] = firstExplanation;
     homePage();
 }

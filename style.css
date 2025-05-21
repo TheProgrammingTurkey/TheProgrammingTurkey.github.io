@@ -71,7 +71,12 @@ p {
   transform: scale(1.08);
 }
 #fullScreenLogo{
-  height: 60vh;
+  max-width: 90%;
+  max-height: 60%;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 .fullScreenHeader{
   height: 90vh;
@@ -363,6 +368,26 @@ p {
   width: 100px;
   height: 100px;
 }
+#explanation{
+  background-color: grey;
+  max-width: 700px;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+#explanation p{
+  font-size: 15px;
+  display: none;
+}
+#explanation a{
+  color: white;
+  text-decoration: none;
+}
+#actualExp{
+  display: block !important;
+}
 @media only screen and (max-width: 1400px) {
   .header{
     font-size: 15px;
@@ -394,9 +419,11 @@ p {
     padding-right: 8px;
     padding-top: 3px;
   }
-  #fullScreenLogo{
-    width: 600px;
-    height: auto;
+  h1{
+    font-size: 25px;
+  }
+  .content p{
+    font-size: 15px;
   }
   .header{
     font-size: 12px;
@@ -411,12 +438,10 @@ p {
     font-size: 15px;
     margin: 8px;
   }
-  
   .color{
     margin-left: 5px;
     margin-bottom: 4px;
   }
-  
   .keyColor{
     min-width: 12px;
     min-height: 12px;
@@ -429,7 +454,6 @@ p {
     margin-left: 3px;
     border: 3px solid yellow;
   }
-  
   .keyText{
     margin-left: 10px;
     margin-right: 5px;
@@ -448,8 +472,8 @@ p {
   p{
     font-size: 20px
   }
-  #fullScreenLogo{
-    width: 300px;
-    height: auto;
-  }
+  #explanation p{
+  font-size: 10px;
+  display: none;
+}
 }
