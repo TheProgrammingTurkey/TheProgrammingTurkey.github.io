@@ -7,6 +7,9 @@ fetch('times.csv')
     const days = data.trim().split('\n').map(day => day.trim().split(','));
     for(let i = 0; i < outputDays.length; i++){
         outputDays[i].getElementsByClassName('dateLocation')[0].innerHTML = days[i+1][0] + " @ " + days[i+1][1];
+        outputDays[i].getElementsByClassName('slider')[0].max = 1;
+        outputDays[i].getElementsByClassName('slider')[0].min = -days[i+1][5];
+        outputDays[i].getElementsByClassName('slider')[0].value = -days[i+1][4];
         if(days[i+1][0]%10 == 1){
             outputDays[i].getElementsByClassName('results')[0].innerHTML = days[i+1][4] + "st out of " + days[i+1][5] + "&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;PAX time was " + Math.round((days[i+1][2]/days[i+1][3])*100) + "% of fastest time";
         }
