@@ -130,6 +130,7 @@ p{
 }
 #showData .day .dateLocation{
   font-weight: bold;
+  cursor: pointer;
 } 
 .slider {
   -webkit-appearance: none;
