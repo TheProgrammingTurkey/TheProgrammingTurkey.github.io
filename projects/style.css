@@ -114,6 +114,54 @@ p{
 #dropdown:hover #dropdown-content {
   display: block;
 }
+#showData{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#showData .day{
+  display: flex;
+  flex-direction: row;
+}
+#showData .day div{
+  padding: 10px;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+#showData .day .dateLocation{
+  font-weight: bold;
+} 
+.slider {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 5px;
+  border-radius: 5px;
+  background: white;
+  outline: none;
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 75px;
+  height: 75px;
+  border: 0;
+  background: url('../assets/civic.png') no-repeat center center;
+  background-size: contain;
+}
+.slider::-moz-range-thumb {
+  width: 75px;
+  height: 75px;
+  border: 0;
+  background: url('../assets/civic.png') no-repeat center center;
+  background-size: contain;
+}
+@media only screen and (max-width: 850px) {
+  #showData .day div{
+    padding: 5px;
+    font-size: 14px;
+  }
+} 
 @media only screen and (max-width: 800px) {
   
   #topnav a, #dropdown #dropbtn {
@@ -126,5 +174,23 @@ p{
     padding-left: 3px;
     padding-right: 8px;
     padding-top: 3px;
+  }
+  #showData{
+    font-size: 10px;
+  }
+  .slider{
+    width: 100px;
+    height: 2.5px;
+  }
+  .slider::-webkit-slider-thumb {
+    width: 40px;
+    height: 40px;
+  }
+  .slider::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+  }
+  #showData .day div{
+    padding: 5px;
   }
 } 
