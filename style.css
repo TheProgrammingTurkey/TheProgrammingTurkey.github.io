@@ -422,6 +422,10 @@ p {
     width: 200%;
     height: 130px;
   }
+  .link-title {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .posts {
@@ -438,6 +442,10 @@ p {
   }
   .link-background {
     transform: translate(-50%, -50%) scale(0.5);
+  }
+  .link-title {
+    font-size: 10px;
+    padding: 6px 10px;
   }
   #topnav a, #dropdown #dropbtn {
     padding: 10px 7px;
@@ -501,6 +509,10 @@ p {
   .page-wrapper {
     width: 120px;
     height: 65px;
+  }
+  .link-title {
+    font-size: 8px;
+    padding: 5px 8px;
   }
   .corner-img {
     width: 30px;

@@ -61,7 +61,8 @@ p{
   color: #D4E0F0;
   font-family: "Ubuntu", sans-serif;
   font-size: 18px;
-  width: 60%;
+  max-width: 1000px;
+  width: 80%;
   margin: auto;
   margin-top: 20px;
   line-height: 1.4;
@@ -124,6 +125,7 @@ p{
   flex-direction: row;
 }
 #showData .day div{
+  font-size: 15px;
   padding: 10px;
   font-family: "Ubuntu", sans-serif;
   color: white;
@@ -166,12 +168,6 @@ p{
   margin: auto;
   margin-top: 20px;
 }
-@media only screen and (max-width: 850px) {
-  #showData .day div{
-    padding: 5px;
-    font-size: 14px;
-  }
-} 
 @media only screen and (max-width: 800px) {
   #topnav a, #dropdown #dropbtn {
     padding: 10px 7px;
@@ -183,8 +179,18 @@ p{
     padding-right: 8px;
     padding-top: 3px;
   }
-  #showData{
-    font-size: 10px;
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  p{
+    font-size: 14px;
+  }
+  #showData .day div{
+    padding: 5px;
+    font-size: 2vw;
   }
   .slider{
     width: 100px;
@@ -198,12 +204,23 @@ p{
     width: 40px;
     height: 40px;
   }
-  #showData .day div{
-    padding: 5px;
-  }
   #hockeyStatsIMG{
     border-radius: 10px;
     border-width: 2px;
     width: 80%;
   }
 } 
+@media only screen and (max-width: 500px) {
+  h1{
+    font-size: 35px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  p{
+    font-size: 12px;
+  }
+  #showData .day div{
+    font-size: 1.8vw;
+  }
+}
