@@ -55,21 +55,13 @@ p {
   font-family: "rubik", sans-serif;
   font-size: 30px;
 }
-.homeLink { 
-  margin-top: 20px;
-  margin-bottom: 10px;
-  border: 3px solid #4275b7;
-  padding: 10px 15px;
-  border-radius: 15px;
-  background-color: #a3bcde;
-  font-size: 25px;
-  color: white;
-  cursor: pointer;
-  font-family: "lucid";
+#information{
+  margin: auto;
+  width: 85%;
+  margin-top: 100px;
 }
-.homeLink:hover { 
-  transition-duration: 0.4s;
-  transform: scale(1.08);
+#information p{
+  font-size: 25px;
 }
 #fullScreenLogo{
   max-width: 90%;
@@ -200,24 +192,10 @@ p {
 #dropdown:hover #dropdown-content {
   display: block;
 }
-.information{
-  display: flex;
-}
-.projects, .blogs{
-  width: 50vw
-}
 #recentProj{
   width: 25%;
   margin: auto;
   margin-bottom: 100px;
-}
-.content {
-  overflow: hidden;
-  display: grid;
-  place-items: center;
-}
-.content p{
-  width: 70%;
 }
 #key{
   display: block;
@@ -382,7 +360,7 @@ p {
   font-size: 15px;
   display: none;
 }
-#explanation a{
+a{
   color: white;
   text-decoration: none;
 }
@@ -460,8 +438,11 @@ p {
   h1{
     font-size: 25px;
   }
-  .content p{
-    font-size: 15px;
+  #information{
+    width: 90%;
+  }
+  #information p{
+    font-size: 18px;
   }
   .header{
     font-size: 12px;
@@ -502,6 +483,10 @@ p {
   }
 }
 @media only screen and (max-width: 500px) {
+  #topnav a, #dropdown #dropbtn {
+    padding: 8px 5px;
+    font-size: 15px;
+  }
   .posts {
     grid-template-columns: repeat(3, 120px);
     gap: 8px;
@@ -520,6 +505,9 @@ p {
   }
   p{
     font-size: 20px
+  }
+  #information p{
+    font-size: 15px;
   }
   #explanation p{
     font-size: 10px;
@@ -546,6 +534,12 @@ p {
   #centerIMG{
     width: 50px;
     height: 50px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #topnav a, #dropdown #dropbtn {
+    padding: 8px 5px;
+    font-size: 12px;
   }
 }
 @media only screen and (max-height: 400px) {

@@ -211,6 +211,10 @@ p{
   }
 } 
 @media only screen and (max-width: 500px) {
+  #topnav a, #dropdown #dropbtn {
+    padding: 8px 5px;
+    font-size: 15px;
+  }
   h1{
     font-size: 35px;
   }
@@ -222,5 +226,11 @@ p{
   }
   #showData .day div{
     font-size: 1.8vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #topnav a, #dropdown #dropbtn {
+    padding: 8px 5px;
+    font-size: 12px;
   }
 }
