@@ -137,6 +137,7 @@ p{
 } 
 .slider {
   -webkit-appearance: none;
+  appearance: none;
   width: 200px;
   height: 5px;
   border-radius: 5px;
