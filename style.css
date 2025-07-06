@@ -192,11 +192,6 @@ p {
 #dropdown:hover #dropdown-content {
   display: block;
 }
-#recentProj{
-  width: 25%;
-  margin: auto;
-  margin-bottom: 100px;
-}
 #key{
   display: block;
   position: fixed;
