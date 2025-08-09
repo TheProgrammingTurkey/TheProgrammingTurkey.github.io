@@ -1,5 +1,5 @@
-Date,Location,My PAX Time,Leader PAX Time,My Position,Entries
-5/25/25,Cincinnati,38.243,31.715,114,126
-6/1/25,Columbus,31.439,27.333,69,116
-6/22/25,Piqua,23.332,20.434,20,57
-7/13/25,Dayton,26.397,25.908,5,45
+Date,Location,Region,My PAX Time,Leader PAX Time,My PAX Position,My Raw Time,Leader Raw Time,My Raw Position,Entries
+5/25/25,Cincinnati,Cincinnati SCCA,38.243,31.715,114,48.165,38.068,116,126
+6/1/25,Columbus,OVR SCCA,31.439,27.333,69,39.596,33.488,92,116
+6/22/25,Piqua,WOR SCCA,23.332,20.434,20,29.386,25.530,34,57
+7/13/25,Dayton,MVSCC NASA,26.397,25.908,5,33.245,30.697,18,45

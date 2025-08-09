@@ -137,6 +137,13 @@ p{
   width: 20vw;
   max-width: 150px;
   text-align: right;
+}
+#showData .day .place{
+  width: 20vw;
+  max-width: 115px;
+  text-align: center;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 } 
 .slider {
   -webkit-appearance: none;
