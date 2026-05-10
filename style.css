@@ -205,7 +205,8 @@ p {
 }
 #keyTitle{
   font-size: 30px;
-  font-family: "lucid";
+  font-family: "Ubuntu";
+  font-weight: bold;
   margin: 20px;
 }
 .color{
