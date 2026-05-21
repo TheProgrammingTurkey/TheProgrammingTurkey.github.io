@@ -133,7 +133,6 @@ p{
 }
 #showData .day .dateLocation{
   font-weight: bold;
-  cursor: pointer;
   width: 20vw;
   max-width: 150px;
   text-align: right;
@@ -144,6 +143,7 @@ p{
   text-align: center;
   padding-left: 0px !important;
   padding-right: 0px !important;
+  cursor: pointer;
 } 
 .slider {
   -webkit-appearance: none;
