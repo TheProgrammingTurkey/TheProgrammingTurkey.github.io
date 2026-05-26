@@ -9,6 +9,7 @@
     <script src="/misc/Autocross/script.js" defer></script>
   </head>
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <div id="topnav">
       <img src="/assets/fullScreenLogo.png" onclick="window.location.href=('/index.html')" class="homeImg"/>
       <a href="/index.html">Home</a>
@@ -32,7 +33,7 @@
     <p class="date">First Event: 5/25/25</p>
 
     <p>
-        I've always been a fan of racing. Whether it be watching F1, playing racing games, whatever, i've 
+        I've always been a fan of racing. Whether it be watching F1, playing racing games, whatever, I've 
         always wished I could too. Enter Autocross, a form of racing that is accessible to anyone with a 
         car and a helmet. Last year, my Dad had bought an orange 2023 Honda Civic Si. A manual. A car
         that is fun to drive, and a car that can go decently fast. But mainly, a car that can be driven in 
@@ -41,111 +42,120 @@
         possible. Its fairly simple, easy to learn, cheap, and most importantly, fun. I recommend anyone 
         interested in racing to try it out.
     </p>
-    <h1 style="font-size: 25px; margin-top: 40px; margin-bottom: 15px;">My Results:</h1>
+    <div id="toggles">
+        <image onclick="showData('slidersData')" src="/assets/sliderIcon.png"></image>
+        <image onclick="showData('graphsData')" src="/assets/graphIcon.png"></image>
+    </div>
     <div id="showData">
-      <div>
-        <div class="day">
-            <div class="dateLocation"></div>
-            <div class="graphic">
-                <input type="range" class="slider" disabled>
+        <div id="slidersData" style="display: none;">
+            <h1 style="font-size: 25px; margin-top: 40px; margin-bottom: 15px;">My Results:</h1>
+            <div class="day">
+                <div class="dateLocation"></div>
+                <div class="graphic">
+                    <input type="range" class="slider" disabled>
+                </div>
+                <div class="place" onclick="window.open('https://cincyscca.com/wp-content/uploads/SoloResults/2025/pe3/pe3_pax.htm', '_blank')"></div>
+                <div class="time"></div>
             </div>
-            <div class="place" onclick="window.open('https://cincyscca.com/wp-content/uploads/SoloResults/2025/pe3/pe3_pax.htm', '_blank')"></div>
-            <div class="time"></div>
-        </div>
-        <div class="day">
-            <div class="dateLocation"></div>
-            <div class="graphic">
-                <input type="range" class="slider" disabled>
+            <div class="day">
+                <div class="dateLocation"></div>
+                <div class="graphic">
+                    <input type="range" class="slider" disabled>
+                </div>
+                <div class="place" onclick="window.open('https://cincyscca.com/wp-content/uploads/SoloResults/2025/pe3/pe3_raw.htm', '_blank')"></div>
+                <div class="time"></div>
             </div>
-            <div class="place" onclick="window.open('https://cincyscca.com/wp-content/uploads/SoloResults/2025/pe3/pe3_raw.htm', '_blank')"></div>
-            <div class="time"></div>
-        </div>
-        <br>
-        <div class="day">
-            <div class="dateLocation"></div>
-            <div class="graphic">
-                <input type="range" class="slider" disabled>
+            <br>
+            <div class="day">
+                <div class="dateLocation"></div>
+                <div class="graphic">
+                    <input type="range" class="slider" disabled>
+                </div>
+                <div class="place" onclick="window.open('https://ovr-scca.org/wp-content/uploads/2025/06/2025PE1-Index.html', '_blank')"></div>
+                <div class="time"></div>
             </div>
-            <div class="place" onclick="window.open('https://ovr-scca.org/wp-content/uploads/2025/06/2025PE1-Index.html', '_blank')"></div>
-            <div class="time"></div>
-        </div>
-        <div class="day">
-            <div class="dateLocation"></div>
-            <div class="graphic">
-                <input type="range" class="slider" disabled>
+            <div class="day">
+                <div class="dateLocation"></div>
+                <div class="graphic">
+                    <input type="range" class="slider" disabled>
+                </div>
+                <div class="place" onclick="window.open('https://ovr-scca.org/wp-content/uploads/2025/06/2025PE1-Raw.html', '_blank')"></div>
+                <div class="time"></div>
             </div>
-            <div class="place" onclick="window.open('https://ovr-scca.org/wp-content/uploads/2025/06/2025PE1-Raw.html', '_blank')"></div>
-            <div class="time"></div>
-        </div>
-        <br>
-        <div class="day">
-            <div class="dateLocation"></div>
-            <div class="graphic">
-                <input type="range" class="slider" disabled>
+            <br>
+            <div class="day">
+                <div class="dateLocation"></div>
+                <div class="graphic">
+                    <input type="range" class="slider" disabled>
+                </div>
+                <div class="place" onclick="window.open('https://worscca.org/wp-content/uploads/2025/06/20250620_soloPE3-pe3_pax.htm', '_blank')"></div>
+                <div class="time"></div>
             </div>
-            <div class="place" onclick="window.open('https://worscca.org/wp-content/uploads/2025/06/20250620_soloPE3-pe3_pax.htm', '_blank')"></div>
-            <div class="time"></div>
-        </div>
-        <div class="day">
-            <div class="dateLocation"></div>
-            <div class="graphic">
-                <input type="range" class="slider" disabled>
+            <div class="day">
+                <div class="dateLocation"></div>
+                <div class="graphic">
+                    <input type="range" class="slider" disabled>
+                </div>
+                <div class="place" onclick="window.open('https://worscca.org/wp-content/uploads/2025/06/20250620_soloPE3-pe3_raw.htm', '_blank')"></div>
+                <div class="time"></div>
             </div>
-            <div class="place" onclick="window.open('https://worscca.org/wp-content/uploads/2025/06/20250620_soloPE3-pe3_raw.htm', '_blank')"></div>
-            <div class="time"></div>
-        </div>
-        <br>
-        <div class="day">
-            <div class="dateLocation"></div>
-            <div class="graphic">
-                <input type="range" class="slider" disabled>
+            <br>
+            <div class="day">
+                <div class="dateLocation"></div>
+                <div class="graphic">
+                    <input type="range" class="slider" disabled>
+                </div>
+                <div class="place"  onclick="window.open('https://www.mvscc.com/wp-content/uploads/2025/07/20250713_mvsccPE3_raw.htm', '_blank')"></div>
+                <div class="time"></div>
             </div>
-            <div class="place"  onclick="window.open('https://www.mvscc.com/wp-content/uploads/2025/07/20250713_mvsccPE3_raw.htm', '_blank')"></div>
-            <div class="time"></div>
-        </div>
-        <div class="day">
-            <div class="dateLocation"></div>
-            <div class="graphic">
-                <input type="range" class="slider" disabled>
+            <div class="day">
+                <div class="dateLocation"></div>
+                <div class="graphic">
+                    <input type="range" class="slider" disabled>
+                </div>
+                <div class="place" onclick="window.open('https://www.mvscc.com/wp-content/uploads/2025/07/20250713_mvsccPE3_raw.htm', '_blank')"></div>
+                <div class="time"></div>
             </div>
-            <div class="place" onclick="window.open('https://www.mvscc.com/wp-content/uploads/2025/07/20250713_mvsccPE3_raw.htm', '_blank')"></div>
-            <div class="time"></div>
-        </div>
-        <br>
-        <div class="day">
-            <div class="dateLocation"></div>
-            <div class="graphic">
-                <input type="range" class="slider" disabled>
+            <br>
+            <div class="day">
+                <div class="dateLocation"></div>
+                <div class="graphic">
+                    <input type="range" class="slider" disabled>
+                </div>
+                <div class="place" onclick="window.open('https://worscca.org/wp-content/uploads/2025/08/20250810_WOR_soloPE4_pax.htm', '_blank')"></div>
+                <div class="time"></div>
             </div>
-            <div class="place" onclick="window.open('https://worscca.org/wp-content/uploads/2025/08/20250810_WOR_soloPE4_pax.htm', '_blank')"></div>
-            <div class="time"></div>
-        </div>
-        <div class="day">
-            <div class="dateLocation"></div>
-            <div class="graphic">
-                <input type="range" class="slider" disabled>
+            <div class="day">
+                <div class="dateLocation"></div>
+                <div class="graphic">
+                    <input type="range" class="slider" disabled>
+                </div>
+                <div class="place" onclick="window.open('https://worscca.org/wp-content/uploads/2025/08/20250810_WOR_soloPE4_raw.htm', '_blank')"></div>
+                <div class="time"></div>
             </div>
-            <div class="place" onclick="window.open('https://worscca.org/wp-content/uploads/2025/08/20250810_WOR_soloPE4_raw.htm', '_blank')"></div>
-            <div class="time"></div>
-        </div>
-        <br>
-        <div class="day">
-            <div class="dateLocation"></div>
-            <div class="graphic">
-                <input type="range" class="slider" disabled>
+            <br>
+            <div class="day">
+                <div class="dateLocation"></div>
+                <div class="graphic">
+                    <input type="range" class="slider" disabled>
+                </div>
+                <div class="place" onclick="window.open('https://app.clokkr.com/results/events/afc37d4a-0c58-48fc-a780-ef49ea6f4e16', '_blank')"></div>
+                <div class="time"></div>
             </div>
-            <div class="place" onclick="window.open('https://app.clokkr.com/results/events/afc37d4a-0c58-48fc-a780-ef49ea6f4e16', '_blank')"></div>
-            <div class="time"></div>
-        </div>
-        <div class="day">
-            <div class="dateLocation"></div>
-            <div class="graphic">
-                <input type="range" class="slider" disabled>
+            <div class="day">
+                <div class="dateLocation"></div>
+                <div class="graphic">
+                    <input type="range" class="slider" disabled>
+                </div>
+                <div class="place" onclick="window.open('https://app.clokkr.com/results/events/afc37d4a-0c58-48fc-a780-ef49ea6f4e16', '_blank')"></div>
+                <div class="time"></div>
             </div>
-            <div class="place" onclick="window.open('https://app.clokkr.com/results/events/afc37d4a-0c58-48fc-a780-ef49ea6f4e16', '_blank')"></div>
-            <div class="time"></div>
         </div>
-      </div>
+        <div id="graphsData" style="display: block;">
+            <h1 style="font-size: 25px; margin-top: 40px; margin-bottom: 15px;">Graphs:</h1>
+            <canvas id="myChart" style="width: 500px; height: 300px;"></canvas>
+        </div>
+            
     </div>
   </body>
 </html>
