@@ -4,6 +4,7 @@ const slidersData = document.getElementById('slidersData');
 const graphsData = document.getElementById('graphsData');
 
 let points = [];
+let myChart;
 
 let posToPoints = new Map([
     ["1", 25],
@@ -84,7 +85,7 @@ fetch('times.csv')
 
     const ctx = document.getElementById('myChart');
 
-    new Chart(ctx, {
+    myChart = new Chart(ctx, {
         type: 'line',
         data: {
         labels: ['', ...days.map(sub => sub[0]).slice(1)],
@@ -103,7 +104,7 @@ fetch('times.csv')
         },
         options: {
         responsive: true,
-        maintainAspectRatio: true,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 labels: {
